@@ -39,7 +39,9 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 
 ### ⚙️ Option 1 – Basic Relay Module Setup:
 
-📷 ![Wiring Diagram 1](https://github.com/user-attachments/assets/e7e913be-3a02-41e6-b5c2-cfda8f21cbc1)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/e7e913be-3a02-41e6-b5c2-cfda8f21cbc1" width="500"/>
+</div>
 
 **How it works:**
 
@@ -53,12 +55,14 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 
 ### ⚙️ Option 2 – MOSFET-Controlled Setup:
 
-📷 ![Wiring Diagram 2](https://github.com/user-attachments/assets/156b4302-d7b7-410f-8ac0-798ab03f5fc9)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/156b4302-d7b7-410f-8ac0-798ab03f5fc9" width="500"/>
+</div>
 
-**What's different?**
+**What’s different?**
 
 - This version uses a **[MOSFET](https://www.youtube.com/watch?v=AwRJsze_9m4)** instead of a relay to control the water pump.  
-- **Caution** ⚠️: The pump is directly connected to the Arduino, which may be risky if the pump draws more current than the board can safely handle.  
+- ⚠️ **Caution:** The pump is directly connected to the Arduino, which may be risky if the pump draws more current than the board can safely handle.  
 - It's essential to **measure the pump’s minimum current draw** before using this method.
 
 ---
@@ -78,10 +82,13 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 
 📹 [Watch the circuit in action](https://www.youtube.com/shorts/cVmAhkiixCI)
 
-📸 Implementation snapshot:  
-*(Note: The pump is temporarily powered by the Arduino’s 5V pin, which is **not recommended** for long-term use. A separate power source should be used for safety.)*
+📸 Implementation snapshot:
 
-![Implementation Photo](https://github.com/user-attachments/assets/f836e61f-09c0-440c-89b1-cead8887eb5a)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f836e61f-09c0-440c-89b1-cead8887eb5a" width="500"/>
+</div>
+
+> *Note: The pump is temporarily powered by the Arduino’s 5V pin, which is **not recommended** for long-term use. Use a separate power source to avoid damaging the board.*
 
 ---
 
@@ -91,4 +98,3 @@ Stay tuned for:
 - 🧪 **Final testing and troubleshooting guide**
 
 Happy planting! 🌿 Let your Arduino do the watering! 😄
-
