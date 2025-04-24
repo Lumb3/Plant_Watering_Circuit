@@ -74,7 +74,7 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 - When the sensor touches water, the **green light turns on**.  
 - When the sensor is dry, the **light turns off**.  
 
-📹 [Watch the test](https://dai.ly/x9ignz6)
+📹 [Watch the test](https://dai.ly/x9igo56)
 
 ---
 
