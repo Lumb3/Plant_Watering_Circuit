@@ -80,7 +80,7 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 
 ### 🧪 Test 1: Method 1 Implementation
 
-📹 [Watch the circuit in action](https://dai.ly/x9igo0y)
+📹 [Watch the circuit in action](https://www.youtube.com/watch?v=sHx4R_FgRFo)
 
 📸 Implementation snapshot:
 
