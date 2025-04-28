@@ -60,7 +60,7 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 </div>
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/xxx" width="500"/>
+  <img src="https://github.com/user-attachments/assets/321c0032-1dce-448f-82f0-63e3dc5db8c2" width="500"/>
 </div>
 
 ---
