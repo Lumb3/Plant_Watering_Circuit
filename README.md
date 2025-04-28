@@ -29,7 +29,7 @@ Build a **self-watering circuit** that monitors soil moisture and activates a wa
    🔗 [Purchase here](https://shorturl.at/lv2gv)
 
 6. **Jumper Wires**  
-   🔗 [Example link](https://shorturl.at/xH2F4)
+   🔗 [Purchase here](https://shorturl.at/xH2F4)
 
 ---
 
