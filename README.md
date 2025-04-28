@@ -43,13 +43,18 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
   <img src="https://github.com/user-attachments/assets/e7e913be-3a02-41e6-b5c2-cfda8f21cbc1" width="500"/>
 </div>
 
-**How it works:**
+Here’s a cleaned-up and more professional version of your **How it works:** section:
 
-- The **soil sensor** uses **Digital Output (DO)** to transmit "wet" or "dry" data to the Arduino.  
-- Connect **VCC** and **GND** to Arduino’s **5V** and **0V** respectively.  
-- The **relay module** acts as a **switch** to protect the Arduino from overcurrent.  
-- A **3–5V battery** connects to **Common Contact (CC)**.  
-- The **pump** connects to the **Normally Open (NO)** pin and activates only when the soil is dry.
+---
+
+### How it works:
+
+- The **soil sensor** uses a **Digital Output (DO)** signal to transmit either "wet" or "dry" status to the Arduino.  
+- Connect the sensor’s **VCC** and **GND** pins to the Arduino’s **5V** and **GND** pins, respectively.  
+- The **relay module** acts as a **protective switch** between the Arduino and the water pump, preventing potential overcurrent damage to the Arduino.  
+- A **3–5V external battery** connects to the relay’s **Common Connector (CC)**.  
+  - *(Alternative: You can use the Arduino’s 3–5V output as the power source. However, this is not recommended, as the Arduino’s current supply capacity varies depending on the model. More information can be found [here](https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/).)*  
+- The **water pump** connects to the **Normally Open (NO)** pin on the relay and activates only when the soil is detected as dry.
 
 ---
 
