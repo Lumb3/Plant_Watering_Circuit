@@ -59,6 +59,10 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
   <img src="https://github.com/user-attachments/assets/03b67280-b882-423b-abe3-285fa06876d6" width="400"/>
 </div>
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/xxx" width="500"/>
+</div>
+
 ---
 
 ### ⚙️ Option 2 – MOSFET-Controlled Setup:
