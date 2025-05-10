@@ -90,7 +90,7 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 
 ---
 
-### 🧪 Test 1: Method 1 Implementation
+### 🧪 Test: Method 1 Implementation
 
 📹 [Watch the circuit in action](https://dai.ly/x9igo0y)
 
@@ -105,4 +105,11 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 
 ---
 
+### 🌟 Conclusion
+
+This project successfully demonstrates how Arduino can automate a common task—plant watering—by integrating sensors, relays, and basic electronics. Among the two methods explored, **Method 1 (Relay-based)** proved to be more stable and safer due to current isolation from the Arduino board. Future improvements could include:
+
+- Using a **capacitive moisture sensor** for better durability.
+- Adding **real-time monitoring via Bluetooth or Wi-Fi (e.g., ESP8266)**.
+- Implementing **power-saving modes** for battery-operated use.
 
