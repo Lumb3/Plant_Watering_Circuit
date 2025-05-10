@@ -105,15 +105,4 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 
 ---
 
-## 🔜 Coming Soon:
 
-- 🔌 **Measuring pump current draw**  
-- 💻 **Uploading and testing Arduino code**  
-- 🧪 **Final testing and troubleshooting guide**
-
----
-
-🌿 **Happy planting!**  
-Let your Arduino do the watering! 😄
-
----
