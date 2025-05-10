@@ -1,18 +1,32 @@
-int water; //random variable 
+/*
+Project: Plant Watering System
+Author: Erkhembileg Ariunbold
+*/
+
+int sensorPin = A0;   // Moisture sensor analog pin (output)
+int pumpPin = 3;      // Water pump control pin
+int water;            // Stores moisture reading
+int threshold = 750;  // Adjust this based on your soil test
+
 void setup() {
-  pinMode(3,OUTPUT); //output pin for relay board, this will sent signal to the relay
-  pinMode(6,INPUT); //input pin coming from soil sensor
+  pinMode(pumpPin, OUTPUT);
+  Serial.begin(9600);  // Enable Serial Monitor to read values
 }
 
-void loop() { 
-  water = digitalRead(6);  // reading the coming signal from the soil sensor
-  if(water == HIGH) // if water level is full then cut the relay 
-  {
-  digitalWrite(3,LOW); // low is to cut the relay
+void loop() {
+  water = analogRead(sensorPin);  // Read moisture level (0–1023)
+
+  Serial.print("Moisture level: ");
+  Serial.println(water);
+
+  if (water < threshold) {
+    digitalWrite(pumpPin, HIGH);
+    Serial.println("Soil is dry. Pump ON.");
+  } else {
+    digitalWrite(pumpPin, LOW);
+    Serial.println("Soil is wet. Pump OFF.");
   }
-  else
-  {
-  digitalWrite(3,HIGH); //high to continue proving signal and water supply
-  }
-  delay(400); 
+
+  delay(1000);  // Wait 1 second before next reading
 }
+
