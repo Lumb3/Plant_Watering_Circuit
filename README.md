@@ -1,17 +1,17 @@
 # 🌱 Plant_Watering_Circuit
 
-An **automatic plant watering system** developed using Arduino 💧  
+An **automatic plant watering system** developed using Arduino  
 Keep your plants hydrated without lifting a finger!
 
 ---
 
-## 🎯 Objective  
+## Objective
 
 Build a **self-watering circuit** that monitors soil moisture and activates a water pump when the soil gets too dry.
 
 ---
 
-## 🔧 Materials Used
+## Materials Used
 
 1. **Arduino 5V 1-Channel Relay Module (JK-5V-1RS)**  
    🔗 [Purchase here](https://shorturl.at/cDOVt)
@@ -33,19 +33,17 @@ Build a **self-watering circuit** that monitors soil moisture and activates a wa
 
 ---
 
-## 🧠 Step 1: Planning
+## Step 1: Planning
 
 Proper planning is key! Here are **two wiring schemes** reviewed and approved by my ECE professor:
 
-### ⚙️ Option 1 – Basic Relay Module Setup:
+### Option 1 – Basic Relay Module Setup
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e7e913be-3a02-41e6-b5c2-cfda8f21cbc1" width="500"/>
 </div>
 
----
-
-### How it works:
+**How it works:**
 
 - The **soil sensor** uses a **Digital Output (DO)** signal to transmit either a "wet" or "dry" status to the Arduino.  
 - Connect the sensor’s **VCC** and **GND** pins to the Arduino’s **5V** and **GND** pins, respectively.  
@@ -54,18 +52,19 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
   - *(Alternative: You can use the Arduino’s 3–5V output as the power source. However, this is not recommended, as the water pump may require more current than the Arduino can provide. More details available [here](https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/).)*  
 - The **water pump** connects to the **Normally Open (NO)** pin on the relay and activates only when the soil is detected as dry.
 
-**Working mechanism of the relay module:**  
+**Relay Module Mechanism:**
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/03b67280-b882-423b-abe3-285fa06876d6" width="400"/>
 </div>
 
 <div align="center">
-  <img width="400" alt="Screenshot 2025-04-28 at 22 45 43" src="https://github.com/user-attachments/assets/366ff025-cf26-4e95-96cb-c67001c90f05" />
+  <img width="400" alt="Relay Working" src="https://github.com/user-attachments/assets/366ff025-cf26-4e95-96cb-c67001c90f05" />
 </div>
 
 ---
 
-### ⚙️ Option 2 – MOSFET-Controlled Setup:
+### Option 2 – MOSFET-Controlled Setup
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/156b4302-d7b7-410f-8ac0-798ab03f5fc9" width="500"/>
@@ -79,9 +78,9 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 
 ---
 
-## ⚙️ Step 2: Implementation
+## Step 2: Implementation
 
-### ✅ Soil Sensor Test
+### Soil Sensor Test
 
 - When the sensor touches water, the **green light turns on**.  
 - When the sensor is dry, the **light turns off**.  
@@ -90,7 +89,7 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 
 ---
 
-### 🧪 Test: Method 1 Implementation
+### Test: Method 1 Implementation
 
 📹 [Watch the circuit in action](https://dai.ly/x9igo0y)
 
@@ -105,11 +104,10 @@ Proper planning is key! Here are **two wiring schemes** reviewed and approved by
 
 ---
 
-### 🌟 Conclusion
+## Conclusion
 
 This project successfully demonstrates how Arduino can automate a common task—plant watering—by integrating sensors, relays, and basic electronics. Among the two methods explored, **Method 1 (Relay-based)** proved to be more stable and safer due to current isolation from the Arduino board. Future improvements could include:
 
 - Using a **capacitive moisture sensor** for better durability.
 - Adding **real-time monitoring via Bluetooth or Wi-Fi (e.g., ESP8266)**.
 - Implementing **power-saving modes** for battery-operated use.
-
