@@ -6,10 +6,11 @@ Author: Erkhembileg Ariunbold
 int sensorPin = A0;   // Moisture sensor analog pin (output)
 int pumpPin = 3;      // Water pump control pin
 int water;            // Stores moisture reading
-int threshold = 750;  // Adjust this based on your soil test
+int threshold = 800;  // Adjust this based on your soil test
 
 void setup() {
   pinMode(pumpPin, OUTPUT);
+  pinMode(sensorPin, INPUT);
   Serial.begin(9600);  // Enable Serial Monitor to read values
 }
 
